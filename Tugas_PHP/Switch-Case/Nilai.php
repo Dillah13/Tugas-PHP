@@ -4,7 +4,7 @@
 * Menghitung Nilai Kategori
 */ 
 
-$nilai = 88;
+$nilai = 95;
 switch ($nilai)
 {
 	case ($nilai <= 100 && $nilai >= 90) :
