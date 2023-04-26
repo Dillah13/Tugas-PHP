@@ -8,13 +8,13 @@ tr: tinggi rumus
 bmi: rumus bmi
 */ 
 
-$nama = "Teguh Aditia";
-$tb = 170/100;
-$bb = 60;
+$nama = "Fadillah Kusnandar";
+$tb = 185/100;
+$bb = 80;
 $tr = $tb * $tb;
 $bmi = $bb / $tr;
 
-echo "Halo, $nama. " ;
+echo "Halo, perkenalkan $nama. " ;
 echo "Nilai BMI anda adalah ".number_format($bmi);
 echo ", Anda termasuk ";
 
