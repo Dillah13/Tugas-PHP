@@ -2,10 +2,10 @@
 
 /* 
 * Menghitung Nilai BMI
-tb: tinggi badan
-bb: berat badan
-tr: tinggi rumus
-bmi: rumus bmi
+TB: Tinggi badan
+BB: Berat badan
+TR: Tinggi rumus
+BMI: Rumus BMI
 */ 
 
 $nama = "Fadillah Kusnandar";
@@ -15,7 +15,7 @@ $tr = $tb * $tb;
 $bmi = $bb / $tr;
 
 echo "Halo, perkenalkan $nama. " ;
-echo "Nilai BMI anda adalah ".number_format($bmi);
+echo "Nilai BMI anda yaitu ".number_format($bmi);
 echo ", Anda termasuk ";
 
 if ($bmi < 18.5) {
