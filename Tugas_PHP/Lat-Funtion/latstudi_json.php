@@ -1,7 +1,7 @@
 <?php
     $json = file_get_contents('data.json');
     // Decode the JSON file
-    $data = json_decode($json,false);
+    $data = json_decode($json,true);
 
     function hitung_umur($tanggal_lahir){
         // Create a datetime object using date of birth
