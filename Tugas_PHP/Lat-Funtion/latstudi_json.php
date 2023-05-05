@@ -1,14 +1,10 @@
 <?php
     $json = file_get_contents('data.json');
-    // Decode the JSON file
     $data = json_decode($json,true);
 
     function hitung_umur($tanggal_lahir){
-        // Create a datetime object using date of birth
         $dob = new DateTime($tanggal_lahir);
-        // Get current date
         $now = new DateTime();
-        // Calculate the time difference between the two dates
         $diff = $now->diff($dob);
         return $diff->y;
     }
@@ -31,16 +27,11 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Latihan_Function</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
 </head>
 <body>
     <div class="container">
