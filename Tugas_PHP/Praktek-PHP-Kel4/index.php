@@ -10,14 +10,17 @@
 
 <body>
     <div class="container">
-        <h3 style="text-align:center" class="mt-5">DATA PEMBELI TOKO KUE HARVEST</h3> <br> 
+        <h3 style="text-align:center" class="mt-5">DATA PEMBELI TOKO KUE HARVEST</h3> <br>
+
+        <a href="create.php" class="btn btn-primary lg mb-4" >Create</a>
+
         <table cellpadding ="10" cellspacing="0" class= "table table-bordered table-dark">  
             <tr>
                 <th width="50px" class="text-center">ID Pembeli</th>
                 <th width="200px" class="text-center">Nama Pembeli</th>
                 <th width="200px" class="text-center">Alamat</th>
                 <th width="200px" class="text-center">Jenis Kelamin</th>
-                <th width="200px" class="text-center">No HP</th>
+                <th width="200px" class="text-center">No Telpon</th>
                 <th width="200px" class="text-center">Aksi</th>
             </tr>
 
@@ -35,7 +38,7 @@
                 <td class="text-center"> <?php echo $pembeli['nama_pembeli'] ?></td>
                 <td class="text-center"> <?php echo $pembeli['alamat'] ?></td>
                 <td class="text-center"> <?php echo $pembeli['jenis_kelamin'] ?></td>
-                <td class="text-center"> <?php echo $pembeli['telp'] ?></td>
+                <td class="text-center"> <?php echo $pembeli['no_telepon'] ?></td>
                 <td>
                     <button class="btn btn-primary btn-lg">EDIT</button>
                     <button class="btn btn-danger btn-lg">DELETE</button>
